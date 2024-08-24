@@ -13,6 +13,7 @@ const { id, title, img } = Astro.props;
   href={`/${id}`}
 >
   <img
+    transition:name=`image-${id}`
     class="aspect-[389/500] h-full object-cover w-full max-w-full rounded"
     src={img}
     alt={`Portada del libro ${title}`}
